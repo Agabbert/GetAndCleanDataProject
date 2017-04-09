@@ -13,6 +13,7 @@
 
 ## Set working directory to test data set location
 # setwd("Type your working directory here")
+# setwd("C:/Users/AG ITX 1/Desktop/GetAndCleanDataProject") # my directory
 list.files() #To view files in working directory
 
 ## Read and inspect data from subject test file
@@ -131,4 +132,4 @@ tail(tidydatameans)
 
 ## Write the tidy data to a .txt file.
 getwd()
-write.table(tidydatameans, file = "tidy_data_means.txt")
+write.table(tidydatameans, file = "tidy_data_means.txt", row.names = FALSE)
